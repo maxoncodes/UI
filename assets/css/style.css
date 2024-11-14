@@ -47,11 +47,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&amp;display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&amp;display=swap");
 :root {
-  --color-primary: #fd4520;
+  --color-primary: #8a67d7;
   --color-secondary: #f4f5f6;
   --color-tertiary: #0d1013;
   --color-gray: #f6f6f6;
-  --color-subtitle: #fd4520;
+  --color-subtitle: #8a67d7;
   --background-color-1: linear-gradient(145deg, #1e2024, #23272b);
   --background-color-2: #212428;
   --shadow-1: 10px 10px 19px #1c1e22,
@@ -60,7 +60,7 @@
   --inner-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
   --shadow-white-3: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
   --gradient-box-w: linear-gradient(145deg, #e2e8ec, #ffffff);
-  --gradient-red-hover: linear-gradient(145deg, #f95230, #fb2c02);
+  --gradient-red-hover: linear-gradient(145deg, #f1f1f1, #8a67d7);
   --color-heading: #ffffff;
   --color-heading-wv: #1e2125;
   --color-body: #878e99;
@@ -109,7 +109,7 @@
   --line-height-b1: 1.50;
   --line-height-b2: 1.6;
   --line-height-b3: 1.7;
-  --h1: 70px;
+  --h1: 60px;
   --h2: 60px;
   --h3: 50px;
   --h4: 40px;
@@ -133,12 +133,12 @@
     background:none !important;
   }
   ::-webkit-scrollbar-thumb {
-    background:#fd4520;
+    background:#8a67d7;
     border-radius: 10px;
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background:rgba(255, 51, 51, 0.925)
+    background:#7653c4;
   }
   
 
