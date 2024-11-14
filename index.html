@@ -30,6 +30,55 @@
     <link rel="stylesheet" href="assets/css/plugins/feature.css">
     <!-- Style css -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .icon {
+  position: relative;
+  display: inline-block;
+  padding: 20px;
+  background: #9b84ca0c; /* Neumorphic background color */
+  border-radius: 50%; /* Rounded container for the icon */
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.15), -8px -8px 15px rgba(255, 255, 255, 0.7);
+}
+
+.icon::before,
+.icon::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 75%;
+  height: 75%;
+  border: 2px solid #8a67d73f; /* Neumorphic wave color */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: wave 4s infinite ease-in-out; /* Slower, smoother wave */
+}
+
+.icon::after {
+  animation-delay: 2s; /* Delayed wave for smoother effect */
+}
+
+@keyframes wave {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(3); /* Larger wave size */
+    opacity: 0;
+  }
+}
+
+.icon i {
+  font-size: 24px; /* Adjust icon size as needed */
+  color: #333; /* Icon color */
+  position: relative;
+  z-index: 1;
+}
+
+
+    </style>
 </head>
 
 <body class="template-color-1 spybody white-version" data-spy="scroll" data-target=".navbar-example2" data-offset="150">
