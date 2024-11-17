@@ -11922,15 +11922,6 @@ div#featured-project-carousel {
       margin-left: 0;
       margin-top: 30px; } }
 
-/*---------------------------
-    ADS Sections 
------------------------------*/
-.ads-container {
-  width: 100%; /* Full width */
-  max-width: 728px; /* Maximum width for desktop ads */
-  margin: 0 auto; /* Center-align on the page */
-  overflow: hidden;
-}
 
 /*---------------------------
     Contact Area Styles 
@@ -14653,4 +14644,12 @@ body.white-version {
 .white-version .slider-style-6 .cd-headline span {
   color: var(--color-white) !important; }
 
-
+/*---------------------------
+    ADS Sections 
+-----------------------------*/
+.ads-container {
+  width: 100%; /* Full width */
+  max-width: 728px; /* Maximum width for desktop ads */
+  margin: 0 auto; /* Center-align on the page */
+  overflow: hidden;
+}
