@@ -34,10 +34,10 @@
         .icon {
   position: relative;
   display: inline-block;
-  padding: 20px;
+  padding: 15px; /* Reduced padding for smaller screens */
   background: #9b84ca0c; /* Neumorphic background color */
-  border-radius: 50%; /* Rounded container for the icon */
-  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.15), -8px -8px 15px rgba(255, 255, 255, 0.7);
+  border-radius: 10px; /* Rounded container for the icon */
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.15), -6px -6px 12px rgba(255, 255, 255, 0.7); /* Adjusted for smaller scale */
 }
 
 .icon::before,
@@ -46,10 +46,10 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 75%;
-  height: 75%;
-  border: 2px solid #8a67d73f; /* Neumorphic wave color */
-  border-radius: 50%;
+  width: 70%; /* Smaller size for mobile */
+  height: 70%; /* Smaller size for mobile */
+  border: 2px solid #8a67d7;; /* Neumorphic wave color */
+  border-radius: 10px;
   transform: translate(-50%, -50%);
   opacity: 0;
   animation: wave 4s infinite ease-in-out; /* Slower, smoother wave */
@@ -65,19 +65,35 @@
     opacity: 0.5;
   }
   100% {
-    transform: translate(-50%, -50%) scale(3); /* Larger wave size */
+    transform: translate(-50%, -50%) scale(2.5); /* Slightly smaller wave size for mobile */
     opacity: 0;
   }
 }
 
-.icon i {
-  font-size: 24px; /* Adjust icon size as needed */
+.icon i {  
+  font-size: 20px; /* Adjust icon size for smaller screens */
   color: #333; /* Icon color */
   position: relative;
   z-index: 1;
 }
 
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .icon {
+    padding: 10px; /* Further reduce padding */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1), -4px -4px 10px rgba(255, 255, 255, 0.6); /* Adjust shadow for mobile */
+  }
 
+  .icon::before,
+  .icon::after {
+    width: 60%; /* Smaller wave size */
+    height: 60%;
+  }
+
+  .icon i {
+    font-size: 18px; /* Smaller icon size for mobile */
+  }
+}
     </style>
 </head>
 
@@ -105,10 +121,6 @@
                         <ul class="primary-menu nav nav-pills">
                             <li class="nav-item"><a class="nav-link smoth-animation active" href="#home">Home</a></li>
                             <li class="nav-item"><a class="nav-link smoth-animation" href="#features">UI Components</a></li>
-                            <li class="nav-item"><a class="nav-link smoth-animation" href="#portfolio">Portfolio</a></li>
-                            <li class="nav-item"><a class="nav-link smoth-animation" href="#resume">Resume</a></li>
-                            <li class="nav-item"><a class="nav-link smoth-animation" href="#clients">Clients</a></li>
-                            <li class="nav-item"><a class="nav-link smoth-animation" href="#pricing">Pricing</a></li>
                             <li class="nav-item"><a class="nav-link smoth-animation" href="#blog">blog</a></li>
                             <li class="nav-item"><a class="nav-link smoth-animation" href="#contacts">Contact</a></li>
                         </ul>
@@ -139,8 +151,8 @@
         <div class="inner">
             <div class="menu-top">
                 <div class="menu-header">
-                    <a class="logo" href="index.html">
-                        <img src="https://ui.maxoncodes.com/assets/images/AC.png" alt="Personal Portfolio">
+                    <a class="logox" href="index.html">
+                        <img src="assets\images\headerx.png" alt="Personal Portfolio">
                     </a>
                     <div class="close-button">
                         <button class="close-menu-activation close"><i data-feather="x"></i></button>
@@ -152,8 +164,6 @@
                 <ul class="primary-menu nav nav-pills">
                     <li class="nav-item"><a class="nav-link smoth-animation active" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link smoth-animation" href="#features">Features</a></li>
-                    <li class="nav-item"><a class="nav-link smoth-animation" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link smoth-animation" href="#resume">Resume</a></li>
                     <li class="nav-item"><a class="nav-link smoth-animation" href="#blog">blog</a></li>
                     <li class="nav-item"><a class="nav-link smoth-animation" href="#contacts">Contact</a></li>
                 </ul>
@@ -311,6 +321,10 @@
             </div>
         </div>
         <!-- End Service Area  -->
+
+        <div class="ads-container">
+            <!--Ads Code Here !-->
+                 </div>
 
         <!-- Start News Area -->
         <div class="rn-blog-area rn-section-gap section-separator" id="blog">
@@ -499,6 +513,10 @@
             </div>
         </div>
         <!-- End Contuct section -->
+         
+        <div class="ads-container">
+            <!--Ads Code Here !-->
+                 </div>
 
         <!-- Back to  top Start -->
         <div class="backto-top">
