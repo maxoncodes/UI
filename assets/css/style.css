@@ -60,7 +60,7 @@
   --inner-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
   --shadow-white-3: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
   --gradient-box-w: linear-gradient(145deg, #e2e8ec, #ffffff);
-  --gradient-red-hover: linear-gradient(145deg, #f1f1f1, #8a67d7);
+  --gradient-red-hover: linear-gradient(145deg, #dee2e6, #7a52d1);
   --color-heading: #ffffff;
   --color-heading-wv: #1e2125;
   --color-body: #878e99;
@@ -5371,13 +5371,6 @@ ul.slick-dots {
   padding: 0 !important;
   margin: 0 !important; }
 
-/*!
-Animate.css - http://daneden.me/animate
-Version - 3.4.0
-Licensed under the MIT license - http://opensource.org/licenses/MIT
-
-Copyright (c) 2015 Daniel Eden
-*/
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -8108,6 +8101,10 @@ body.template-color-1 {
       padding: 0; } }
   .sticky .header-wrapper .logo img {
     max-width: calc(100% - 10%); }
+
+    .logox {
+      width: 70%;
+    }
 
 .logo a {
   display: inline-block; }
@@ -11926,6 +11923,16 @@ div#featured-project-carousel {
       margin-top: 30px; } }
 
 /*---------------------------
+    ADS Sections 
+-----------------------------*/
+.ads-container {
+  width: 100%; /* Full width */
+  max-width: 728px; /* Maximum width for desktop ads */
+  margin: 0 auto; /* Center-align on the page */
+  overflow: hidden;
+}
+
+/*---------------------------
     Contact Area Styles 
 -----------------------------*/
 .contact-about-area {
@@ -11951,9 +11958,11 @@ div#featured-project-carousel {
     overflow: hidden;
     border-radius: 10px; }
     .contact-about-area .thumbnail img {
-      width: 65%;
+      border-radius: 50%;
+      width: 45%;
       height: auto;
-      transition: var(--transition); }
+      }
+      
   .contact-about-area .title-area {
     margin-bottom: 15px; }
     .contact-about-area .title-area h4.title {
@@ -12040,7 +12049,8 @@ div#featured-project-carousel {
         .contact-about-area .social-area .social-icone a:hover::before {
           opacity: 1; }
   .contact-about-area:hover .thumbnail img {
-    transform: scale(1.1); }
+    
+     }
 
 .contact-form-wrapper {
   box-shadow: var(--shadow-1);
