@@ -11926,15 +11926,11 @@ div#featured-project-carousel {
     ADS Sections 
 -----------------------------*/
 .ads-container {
-      width: 100%; /* Full width */
-      max-width: 728px; /* Maximum width for desktop ads */
-      margin: 0 auto; /* Center-align on the page */
-      overflow: hidden;
-      box-shadow: var(--shadow-white-3); /* Applying shadow effect */
-      border: 1px solid var(--color-border); /* Adding border */
-      border-radius: 10px; /* Optional: smooth border corners */
-      padding: 10px; /* Optional: space inside the container */
-    }
+  width: 100%; /* Full width */
+  max-width: 728px; /* Maximum width for desktop ads */
+  margin: 0 auto; /* Center-align on the page */
+  overflow: hidden;
+}
 
 /*---------------------------
     Contact Area Styles 
