@@ -1,0 +1,172 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  html,body{
+    display: grid;
+    height: 100%;
+    background: #e0e5ec;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+  }
+
+    .container { 
+            border-radius: 10px;
+            padding: 0 20px;
+            margin-top: inherit;
+            display: flex;
+            box-shadow: 2px 2px 5px #babec4, -2px -2px 5px #fff;
+        }
+
+        .box {
+            margin-top: 35px;
+            font-size: 1.1rem;
+            color: #333;
+            border-radius: 10px;
+            padding: 5px 10px;
+        }
+       
+        .box h3 {
+            color: #01a3a4;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+        .text h1 {
+            font-size: 55px;
+            line-height: 100px;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.24); /* Retain shadow for depth */
+            background: linear-gradient(90deg, #ff8c76, #fbbafc, #5f78e4, #8ab69d, #f9bc01);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; /* Make the text color transparent to show the gradient */
+            font-weight: bold; /* Optional for a stronger look */
+        }
+        
+        .text h2 {
+            font-size: 35px;
+            line-height: 100px;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 5px rgb(0 0 0 / 24%);
+            
+        }
+    
+        .text p {
+            margin-top: 20px;
+            font-size: 14px;
+            letter-spacing: 1px;
+            line-height: 30px;
+            color: #333;
+            border-radius: 10px;
+            padding: 5px 10px;
+            box-shadow: 2px 2px 5px #babec4, -2px -2px 5px #fff;
+            
+        }
+        .profile img {
+          margin-top: 20px;
+          position: relative;
+          width: 500px;
+          right: 1px;
+          pointer-events: none;
+          filter: drop-shadow(10px 10px 15px rgba(46, 51, 49, 0.205));
+          animation: smoothMove 5s infinite ease-in-out;
+        }
+        
+        @keyframes smoothMove {
+          0%, 100% {
+            transform: translateX(0);
+          }
+          50% {
+            transform: translateX(20px);
+          }
+        }
+        
+
+        .icons {
+
+            margin-top: 30px;
+        }
+
+        .icons a{
+  background: #e0e5ec;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  margin: 0 10px;
+  display: inline-flex;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: all 0.3s;
+  box-shadow: -3px -3px 7px #ffffff,
+              3px 3px 5px #ceced1;
+}
+.icons a:hover:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  background: #ecf0f3;
+  box-shadow: inset -3px -3px 7px #ffffff,
+              inset 3px 3px 5px #ceced1;
+}
+.icons a i{
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  line-height: 40px;
+}
+.icons a:hover i{
+  transform: scale(0.9);
+}
+.icons a.fb i{
+  color: #4267B2;
+}
+.icons a.twitter i{
+  color: #1DA1F2;
+}
+.icons a.insta i{
+  color: #E1306C;
+}
+.icons a.git i{
+  color: #333;
+}
+.icons a.yt i{
+  color: #ff0000;
+}
+    
+        /* Styles for screens smaller than 600 pixels */
+        @media only screen and (max-width: 600px) {
+            .profile img {
+                display: none;
+            }
+    
+            .text h2 {
+                    margin-top: 22px;
+                    font-size: 22px;
+                    line-height: 20px;
+                    letter-spacing: 2px;
+            }
+    
+            .text p {
+               padding: 20px;
+               font-size: 16px;
+               letter-spacing: 1px;
+               line-height: 25px;
+            }
+    
+            .container {
+                padding: 0 10px;
+                margin-top: 10px;
+                display: flex;
+            }
+
+        }

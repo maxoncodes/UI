@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="css/welcome.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>   
+    <div class="container">
+        <div class="text">
+            <h1>MAXON UI</h1>
+            <h3>Free UI Components & Web Design Tools</h3>
+                <p>A modern and professional interface library for designers and developers. 
+                    Create seamless designs with ease using our customizable and free components.</p>
+                <div class="box">
+                    <h3>How to use</h3>
+                    <p>
+                      Explore and integrate "Free UI Components & Web Design Tools" directly 
+                      into your project with ease. The components are customizable for all styles.
+                    </p>
+                  </div>
+            <div class="icons">
+                <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="insta"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="git"><i class="fab fa-github"></i></a>
+                <a href="#" class="yt"><i class="fab fa-youtube"></i></a>
+              </div>    
+        </div>
+        <div class="profile">
+            <img src="image/ux-ui-design.png" alt="Maxon" />
+        </div>    
+    </div>
+    <script src="js/script.js"></script>
+    <script>
+        window.addEventListener("message", (event) => {
+            if (event.data && event.data.theme) {
+                document.body.className = event.data.theme; // Apply the theme
+            }
+        });
+    </script>
+    
+</body>
+</html>

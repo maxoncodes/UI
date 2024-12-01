@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAXON UI</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="sticky-header">
+    <a href="/index.html"><div class="logo">MAXON UI</div></a>
+    <div class="right">
+      <button id="bell" class="bell">🔔</button>
+      <button id="toggle-theme" class="toggle-theme">🌙</button>
+    </div>
+    
+  </header>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div>
+      <button class="toggle-btn">UI Colors</button>
+      <div class="options">
+        <button onclick="loadPage('pages/Colors/1/colors.html')">Set <span style="color: crimson; font-weight: 600;">#1</span></button>
+        <button onclick="loadPage('pages/Colors/2/index.html')">Set <span style="color: rgb(2, 134, 46); font-weight: 600;">#2</span></button>
+        <button onclick="loadPage('pages/Colors/3/index.html')">Set <span style="color: rgb(20, 73, 220); font-weight: 600;">#3</span></button>
+        <button onclick="loadPage('pages/Colors/4/index.html')">Set <span style="color: rgb(160, 177, 6); font-weight: 600;">#4</span></button>
+        <button onclick="loadPage('pages/Colors/5/index.html')">Set <span style="color: rgb(140, 7, 158); font-weight: 600;">#5</span></button>
+        <button onclick="loadPage('pages/Colors/6/index.html')">Set <span style="color: rgb(6, 151, 144); font-weight: 600;">#6</span></button>
+
+      </div>
+    </div>
+
+    <div>
+      <button class="toggle-btn">Buttons</button>
+      <div class="options">
+        <button onclick="loadPage('pages/Buttons/file1/index.html')">Set <span style="color: crimson; font-weight: 600;">#1</span></button>
+        <button onclick="loadPage('pages/Buttons/file2/index.html')">Set <span style="color: rgb(2, 134, 46); font-weight: 600;">#2</span></button>
+        <button onclick="loadPage('pages/Buttons/file3/index.html')">Set <span style="color: rgb(20, 73, 220); font-weight: 600;">#3</span></button>
+        <button onclick="loadPage('pages/Buttons/file4/index.html')">Set <span style="color: rgb(160, 177, 6); font-weight: 600;">#4</span></button>
+        <button onclick="loadPage('pages/Buttons/file5/index.html')">Set <span style="color: rgb(140, 7, 158); font-weight: 600;">#5</span></button>
+        <button onclick="loadPage('pages/Buttons/file6/index.html')">Set <span style="color: rgb(6, 151, 144); font-weight: 600;">#6</span></button>
+        <button onclick="loadPage('pages/Buttons/file7/index.html')">Set <span style="color: rgb(112, 56, 177); font-weight: 600;">#7</span></button>
+        <button onclick="loadPage('pages/Buttons/file8/index.html')">Set <span style="color: rgb(207, 149, 22); font-weight: 600;">#8</span></button>
+        <button onclick="loadPage('pages/Buttons/file9/index.html')">Set <span style="color: rgb(182, 6, 173); font-weight: 600;">#9</span></button>
+        <button onclick="loadPage('pages/Buttons/file10/index.html')">Set <span style="color: rgb(23, 150, 189); font-weight: 600;">#10</span></button>
+      </div>
+    </div>
+      <button class="toggle-btn">Cards</button>
+      <div class="options">
+        <button onclick="loadPage('pages/Cards/file1/index.html')">Set <span style="color: crimson; font-weight: 600;">#1</span></button>
+        <button onclick="loadPage('pages/Cards/file2/index.html')">Set <span style="color: rgb(2, 134, 46); font-weight: 600;">#2</span></button>
+        <button onclick="loadPage('pages/Cards/file3/index.html')">Set <span style="color: rgb(20, 73, 220); font-weight: 600;">#3</span></button>
+        <button onclick="loadPage('pages/Cards/file4/index.html')">Set <span style="color: rgb(160, 177, 6); font-weight: 600;">#4</span></button>
+        <button onclick="loadPage('pages/Cards/file5/index.html')">Set <span style="color: rgb(140, 7, 158); font-weight: 600;">#5</span></button>
+        <button onclick="loadPage('pages/Cards/file6/index.html')">Set <span style="color: rgb(6, 151, 144); font-weight: 600;">#6</span></button>
+        <button onclick="loadPage('pages/Cards/file7/index.html')">Set <span style="color: rgb(112, 56, 177); font-weight: 600;">#7</span></button>
+        <button onclick="loadPage('pages/Cards/file8/index.html')">Set <span style="color: rgb(207, 149, 22); font-weight: 600;">#8</span></button>
+        <button onclick="loadPage('pages/Cards/file9/index.html')">Set <span style="color: rgb(182, 6, 173); font-weight: 600;">#9</span></button>
+        <button onclick="loadPage('pages/Cards/file10/index.html')">Set <span style="color: rgb(23, 150, 189); font-weight: 600;">#10</span></button>
+      </div>
+    </div>  
+
+
+</div>
+
+  <!-- Main Content -->
+  <main>
+    <iframe id="content-iframe"></iframe>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
