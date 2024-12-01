@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  html {
+    font-size: 20px;
+  }
+  
+  body {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #e0e5ec;
+    color: rgba(111, 122, 99, 1);
+  }
+  
+  nav {
+    height: 50px;
+    background-color: #e0e5ec;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 40px;
+  }
+  nav .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  nav ul li {
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 20px;
+    background: #e0e5ec;
+    box-shadow: 2px 2px 5px #babec4, -2px -2px 5px #fff;
+    border-radius: 8px;
+    z-index: 1000;
+    display: inline-block;
+    margin-right: 20px;
+    height: 45px;
+    border-top: 3px solid transparent;
+    position: relative;
+  }
+  
+  nav ul li:hover {
+    box-shadow: inset 2px 2px 5px #babec4, inset -2px -2px 5px #fff;
+    background-color: #e0e5ec;
+    border-color: rgba(207, 207, 209, 0.253);
+    cursor: pointer;
+  }
+  
+  #simpleLi:hover::after,
+  #hexLi:hover::after,
+  #rgbLi:hover::after {
+    display: block;
+  }
+  
+  #simpleLi::after,
+  #hexLi::after,
+  #rgbLi::after {
+    display: none;
+    height: 50px;
+    position: absolute;
+    bottom: -60px;
+    right: 0;
+    background-color: #e0e5ec;
+    border-radius: 8px;
+    width: 520px;
+    font-size: 0.75rem;
+    line-height: 50px;
+    color: rgba(111, 122, 99, 1);
+  }
+  
+  #simpleLi::after {
+    content: "The background will be assigned and printed, scrolling a given list of colors";
+  }
+  
+  #hexLi::after {
+    content: "We will be generating a random hex background for our body";
+  }
+  
+  #rgbLi::after {
+    content: "And, yep, you've guessed it! we'll generate a random rgb color!";
+  }
+  
+  .container {
+    display: flex;
+    width: 70%;
+    margin-inline: auto;
+    height: 100%;
+  }
+  
+  .w50 {
+    width: 50%;
+    height: 50px;
+    line-height: 50px;
+  }
+  
+  .w50:nth-of-type(1) {
+    text-align: left;
+  }
+  .w50:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+  }
+  
+  section.list,
+  section.hex,
+  section.rgb {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  section.d-none {
+    display: none;
+  }
+  
+  .h-container {
+    display: flex;
+    background-color: #00000062;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+  }
+  .btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn-list,
+  .btn-hex,
+  .btn-rgb {
+    padding: 10px 15px;
+    border: 2px solid white;
+    width: 150px;
+    border-radius: 10px;
+    transition: all 0.2s ease-out;
+    background-color: black;
+    color: white;
+  }
+  
+  .btn-list:hover,
+  .btn-hex:hover,
+  .btn-rgb:hover {
+    background-color: white;
+    cursor: pointer;
+    color: black;
+  }
+  
+  footer {
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    font-size: 0.75rem;
+    background-color: #e0e5ec;
+  }
+  
+  footer a {
+    font-size: 0.78rem;
+    text-decoration: none;
+    color: #006c9e;
+    background-color: #e0e5ec;
+    padding: 4px 8px;
+    border-radius: 10px;
+    margin-inline: 2px;
+    transition: background-color 0.5s;
+  }
+  
+  footer a:hover {
+    cursor: pointer;
+    background-color: rgba(111, 122, 99, 1);
+    color: #e0e5ec;
+  }
+  
