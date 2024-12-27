@@ -1,0 +1,614 @@
+
+/* MAIN CSS */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/021/291/764/small_2x/colorful-abstract-blurred-gradient-mesh-background-in-bright-colors-colorful-smooth-template-soft-color-background-color-neon-gradient-moving-abstract-blurred-background-the-colors-blurred-neon-art-free-video.jpg');
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    background-size: cover; /* Scales the image to cover the entire element */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    /* margin: 10px;
+    border-radius: 10px; */
+background: #dfe6e9;    background: rgba(255, 255, 255, 0.2); /* Transparent white background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    z-index: 1000;
+  }
+  
+  /* Header */
+  .sticky-header {
+    position: sticky;
+    top: 0;
+  }
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #333;
+    padding: 3px 10px;
+  }
+
+  header .toggle-theme {
+    background: darkcyan;    
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 3px 6px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgb(41 74 107 / 41%), -2px -2px 5px rgba(0, 0, 0, .1);
+    transition: background 0.3s;
+  }
+  header .toggle-theme:hover {
+    background: #432388;
+  }
+
+  header .bell {
+    background: darkcyan;    
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 3px 6px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgb(41 74 107 / 41%), -2px -2px 5px rgba(0, 0, 0, .1);
+    transition: background 0.3s;
+  }
+
+  header .bell:hover {
+    background: #432388;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    display: none;
+    width: 200px;
+    position: fixed;
+    top: 77px; /* Adjust for header height */
+    left: 0;
+    height: 81%;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    overflow-y: auto;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2); /* Transparent white background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  .sidebar .toggle-btn {
+    margin-left: 5%;
+    background: #5f78e424;
+    text-align: center;
+    color: #333;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 80%;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #babec4, -2px -2px 5px #fff;
+    transition: background 0.3s, transform 0.2s;
+  }
+  .sidebar .toggle-btn:hover {
+    background: #ff8c7636;
+    transform: scale(1.02);
+  }
+  .sidebar .options {
+    display: none;
+    padding-left: 10px;
+  }
+  .sidebar .options button {
+    display: inline-block;
+background: #dfe6e9;    color: #333;
+    border: none;
+    padding: 8px;
+    margin: 5px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #babec4, -2px -2px 5px #fff;
+    transition: background 0.3s, transform 0.2s;
+  }
+  .sidebar .options button:hover {
+    background: #d4dae4;
+    transform: scale(1.02);
+  }
+  
+  /* Main Content */
+  main {
+    margin-left: 220px;
+    padding: 20px;
+  }
+  iframe {
+    width: 100%;
+    height: calc(100vh - 100px);
+    border: none;
+    box-shadow: 2px 2px 5px #babec4, -2px -2px 5px #fff;
+    border-radius: 10px;
+  }
+  
+  /* Dark Theme */
+  body.dark {
+    background: #24243e;
+    color: #ddd;
+  }
+  
+  body.dark header, body.dark .sidebar, body.dark .hero{
+    border: 1px solid #222; /* Light border */
+  }
+
+  body.dark header .toggle-theme {
+background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px #111, inset -2px -2px 5px #2a2a2a;
+    transition: background 0.3s;
+  }
+
+  body.dark header .bell {
+background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px #111, inset -2px -2px 5px #2a2a2a;
+    transition: background 0.3s;
+  }
+
+  
+
+  body.dark header .toggle-theme .b:hover:hover {
+background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+  body.dark .sidebar .toggle-btn .bell:hover {
+background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: inset 2px 2px 5px #111, inset -2px -2px 5px #2a2a2a;
+  }
+
+  body.dark .sidebar .options button:hover {
+background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: inset 2px 2px 5px #111, inset -2px -2px 5px #2a2a2a;
+  }
+
+  body.dark iframe {
+background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: inset 2px 2px 5px #111, inset -2px -2px 5px #2a2a2a;
+  }
+
+  body.dark .hero {
+    background: #23252636;  /* fallback for old browsers */
+    box-shadow: inset 2px 2px 5px #111, inset -2px -2px 5px #2a2a2a;
+  }
+
+  body.dark header, body.dark footer, body.dark .sidebar {
+background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: inset 2px 2px 5px #111, inset -2px -2px 5px #2a2a2a;
+  }
+  body.dark .logo, body.dark .toggle-btn, body.dark .options button {
+    color: #ddd;
+  }
+
+  body.dark .toggle-btn, body.dark .options button {
+    background: #232526;  /* fallback for old browsers */
+    box-shadow: 2px 2px 5px #111, inset -2px -2px 5px #2a2a2a;
+  }
+
+  .image-container {
+    margin: 60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+         /*WELCOME DARK*/
+
+         body.dark .container {
+      background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          box-shadow: inset 2px 2px 5px #111, inset -2px -2px 5px #2a2a2a;
+        }
+      
+        body.dark .text p {
+          color: #ddd;
+      background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          box-shadow: inset 2px 2px 5px #111, inset -2px -2px 5px #2a2a2a;
+        }
+       
+        body.dark .social-icons a {
+      background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          box-shadow: 2px 2px 5px #111, -2px -2px 5px #2a2a2a;
+        }
+      
+        body.dark .social-icons a:hover:before{
+      background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          box-shadow: 2px 2px 5px #111, -2px -2px 5px #2a2a2a;
+        }
+
+
+        body.dark .hamburger {
+
+          color: #ddd;
+      background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          box-shadow: 2px 2px 5px #111, inset -2px -2px 5px #2a2a2a;
+        }
+      
+
+/* Responsive scrollbar adjustments */
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 8px;
+}
+
+
+/* Define theme variables */
+:root {
+  --scrollbar-track-color: #f0f0f0;
+  --scrollbar-thumb-color: linear-gradient(145deg, #e0e0e0, #f8f8f8);
+  --scrollbar-thumb-hover-color: linear-gradient(145deg, #d8d8d8, #f0f0f0);
+  --neumorphic-light-shadow: inset 2px 2px 5px #d0d0d0, inset -2px -2px 5px #ffffff;
+}
+
+[data-theme="night"] {
+  --scrollbar-track-color: #24243e;
+  --scrollbar-thumb-color: linear-gradient(145deg, #3c3c3c, #4b4b4b);
+  --scrollbar-thumb-hover-color: linear-gradient(145deg, #454545, #5b5b5b);
+  --neumorphic-light-shadow: inset 2px 2px 5px #1a1a1a, inset -2px -2px 5px #3c3c3c;
+}
+
+/* Global Neumorphic Scrollbar */
+* {
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #a4abb4 rgba(0, 0, 0, .1); /* Neutral thumb and track colors for Firefox */
+}
+
+*::-webkit-scrollbar {
+  width: 15px; /* Width of the scrollbar */
+  height: 12px; /* Height for horizontal scrollbars */
+}
+
+*::-webkit-scrollbar-track {
+  background: #e6e6e6; /* Neutral track background */
+  border-radius: 12px; /* Smooth rounded corners */
+  box-shadow: inset 2px 2px 5px #cccccc, inset -2px -2px 5px #ffffff; /* Neumorphic effect */
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(145deg, #d4d4d4, #f0f0f0); /* Subtle thumb gradient */
+  border-radius: 12px; /* Smooth rounded corners */
+  box-shadow: inset 2px 2px 5px #b0b0b0, inset -2px -2px 5px #ffffff; /* Neumorphic thumb effect */
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(145deg, #c8c8c8, #e0e0e0); /* Slightly darker on hover */
+}
+
+/* Smooth scrolling for all elements */
+html {
+  scroll-behavior: smooth;
+}
+
+/*MODE CSS*/
+
+/* Hamburger Button */
+.hamburger {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-size: 1.3rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 2000;
+  transition: background 0.3s, transform 0.2s;
+}
+
+
+.hamburger:hover {
+  transform: scale(1.1);
+}
+
+/* Active Hamburger State */
+.hamburger.active {
+  transform: rotate(90deg);
+}
+
+/* Hide Hamburger on Larger Screens */
+@media (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 70%; /* Adjust sidebar width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    display: none; /* Ensure it's visible */
+    position: fixed; /* Fix it to a specific position */
+    right: 10px; /* Distance from the right */
+    width: 30%; /* Adjust sidebar width for small screens */
+    height: auto; /* Adjust height to content */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Floating shadow */
+    border-radius: 8px; /* Rounded corners for better look */
+    padding: 10px;
+    z-index: 1000; /* Ensure it stays above other content */
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    margin-left: 0;
+    padding: 20px;
+  }
+}
+
+
+
+/* Hide Hamburger on Larger Screens */
+@media (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+/* Header adjustments for mobile screens */
+@media (max-width: 480px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  /* Hamburger menu on the left */
+  .hamburger {
+    margin-top: 0px;
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background-color: #e0e5ec00; /* Light background */
+    cursor: pointer;
+  }
+
+  /* Center the logo */
+  .logo {
+    flex: 1;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0;
+    position: relative;
+    left: 35%;
+    transform: translateX(-15%);
+  }
+
+  /* Icons (bell and toggle-theme) on the right */
+  .right {
+    display: flex;
+    gap: 10px;
+  }
+
+  .bell {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #f0f0f0; /* Light background */
+    border-radius: 50%; /* Make it round */
+    cursor: pointer;
+  }
+  .toggle-theme. {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    padding: 3px 6px;
+    background-color: #2d49c7; /* Light background */
+    border-radius: 50%; /* Make it round */
+    cursor: pointer;
+  }
+
+  .image-container {
+    margin: 60px;
+    position: relative;
+    display: none;
+  }
+}
+
+canvas {
+  display: block;
+}
+
+
+/* WELCOME CSS */
+
+body.light {
+  background: linear-gradient(135deg, #e0e5ec, #d4dae4);
+  color: #333;
+}
+
+body.dark {
+  background-color: #2b2d2e;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-repeat: no-repeat; /* Prevents repeating the image */
+  background-size: cover; /* Scales the image to cover the entire element */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed;
+  color: #fff;
+  transition: background 0.3s, color 0.3s;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  height: calc(100vh - 178px);
+  gap: 2rem;
+  border: none;
+  background: rgba(255, 255, 255, 0.2); /* Transparent white background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.content {
+  max-width: 600px;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  color: inherit;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.social-icons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons a {
+  color: #ffd337;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 35px;
+  height: 35px;
+  padding: 3px 6px;
+  background-color: darkcyan; /* Light background */
+  border-radius: 50%; /* Make it round */
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgb(41 74 107 / 41%), -2px -2px 5px rgba(0, 0, 0, .1);
+  transition: background 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+  background: #432388;
+  transform: translateY(-3px);
+}
+
+.neumorphic-wave {
+  width: 220px;
+  height: 220px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 
+    10px 10px 20px rgba(0, 0, 0, 0.3), 
+    -10px -10px 20px rgba(255, 255, 255, 0.8), 
+    inset 4px 4px 8px rgba(255, 255, 255, 0.3), 
+    inset -4px -4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+body.dark .neumorphic-wave {
+  background: linear-gradient(145deg, rgba(50, 50, 50, 0.3), rgba(30, 30, 30, 0.2));
+  box-shadow: 
+    10px 10px 20px rgba(0, 0, 0, 0.8), 
+    -10px -10px 20px rgba(50, 50, 50, 0.5), 
+    inset 4px 4px 8px rgba(0, 0, 0, 0.6), 
+    inset -4px -4px 8px rgba(50, 50, 50, 0.4);
+}
+
+.neumorphic-wave img {
+  width: 60%;
+  border-radius: 50%;
+  box-shadow: 
+    8px 8px 16px rgba(0, 0, 0, 0.3), 
+    -8px -8px 16px rgba(255, 255, 255, 0.6);
+}
+
+/* MOBILE CSS */
+
+@media (max-width: 480px) {
+  .social-icons {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-icons a {
+    color: #ffd337;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 35px;
+    padding: 3px 3px;
+  
+}
+
