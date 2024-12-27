@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+  }
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e5ec;
+    --background-color: #fff;
+  }
+  .container {
+    border-radius: 10px;
+    width: 95%;
+    height: 95%;
+    border: 2px solid #0007;
+    padding: 4rem;
+    display: inherit;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--background-color);
+    transition: background 0.5s ease;
+    text-align: center;
+  }
+  .text {
+    position: relative;
+    font-size: 70px;
+    font-weight: bold;
+    cursor: copy;
+    z-index: 2;
+    color: #fff;
+    &::before {
+      z-index: 1;
+      content: "Click to copy";
+      position: absolute;
+      top: 2rem;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      padding: 0.7rem;
+      width: 120px;
+      font-size: 12px;
+      border-radius: 15px;
+      background-color: transparent;
+      color: transparent;
+      transition-property: all;
+      transition-duration: 0.4s;
+    }
+    &:hover::before {
+      color: #fff;
+      top: -1.5rem;
+      background-color: #0075ff;
+    }
+  
+    &::after {
+      z-index: 1;
+      position: absolute;
+      top: 3.5rem;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 0;
+      height: 0;
+      content: "";
+      border-top: 0.5rem solid transparent;
+      border-left: 0.5rem solid transparent;
+      border-right: 0.5rem solid transparent;
+      color: transparent;
+      transition-property: all;
+      transition-duration: 0.3s;
+    }
+    &:hover::after {
+      top: 0.5rem;
+      border-top-color: #0075ff;
+    }
+    &.active::before {
+      content: "Copied";
+      background-color: #0088ff;
+      animation: blur 0.5s ease-in 0.3s forwards;
+    }
+    &.active::after {
+      border-top-color: #0088ff;
+      animation: blur 1s ease-out 0.3s forwards;
+    }
+  }
+  button {
+    border-radius: 8px;
+    font-size: 30px;
+    color: #fff;
+    background-color: rgb(6 41 105);
+    margin: 1rem;
+    padding: 1rem 1.5rem;
+    border: 3px ridge #003eaf;
+    user-select: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    &:hover {
+      background-color: #0554ee;
+    }
+    &:active {
+      background-color: #0084ef;
+    }
+  }
+  
+  @keyframes blur {
+    75% {
+      border-top-color: transparent;
+    }
+    to {
+      color: transparent;
+      background-color: transparent;
+      border-top-color: transparent;
+    }
+  }
+  

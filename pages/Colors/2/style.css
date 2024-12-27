@@ -1,0 +1,43 @@
+body {
+    font-size: 14px;
+    background: #f1f1f1;
+    margin: 0;
+}
+
+/* -------------------------------- 
+palette-colors
+-------------------------------- */
+/*-----------------------------
+body
+------------------------------*/
+body::after{/* overlay layer visible on small devices when the right panel slides in */
+position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(78,83,89,0.8);visibility:hidden;opacity:0;-webkit-transition:opacity .3s 0s,visibility 0s .3s;-moz-transition:opacity .3s 0s,visibility 0s .3s;transition:opacity .3s 0s,visibility 0s .3s;}
+body.cd-overlay::after{visibility:visible;opacity:1;-webkit-transition:opacity .3s 0s,visibility 0s 0s;-moz-transition:opacity .3s 0s,visibility 0s 0s;transition:opacity .3s 0s,visibility 0s 0s;}
+@media only screen and (min-width:768px){body::after{display:none;}}
+/* -------------------------------- 
+home-container 
+-------------------------------- */
+a.home-container{position:absolute;top:0;right:0;width:40px;height:40px;display:flex;align-items:center;justify-content:center;font-size:1.2em;padding:0;margin:10px;overflow:hidden;background-color:#e9573f;color:#ffffff;-webkit-animation:color-change 3s linear 0s infinite;animation:color-change 3s linear 0s infinite;}
+/* -------------------------------- 
+Main components 
+-------------------------------- */
+header{position:relative;height:180px;line-height:180px;text-align:center;background-color:#ffffff;}
+@media only screen and (min-width:1024px){header{height:240px;line-height:240px;}}
+@media only screen and (min-width:768px){ul.nav-container-font li a{font-size:1em;padding:2px 25px;margin:10px;}}
+/* -------------------------------- 
+colors flat
+-------------------------------- */
+.colors-flat{max-width: 700px;margin: 0 auto;}
+/*------------svg + link------------*/
+.text--line{font-size:10rem;}
+svg{width:100%;height:100%;}
+.text-copy{fill:none;stroke:white;stroke-dasharray:7% 28%;stroke-width:3px;-webkit-animation:stroke-offset 9s infinite linear;animation:stroke-offset 9s infinite linear;}
+.text-copy:nth-child(1){stroke:#e9573f;stroke-dashoffset:7%;}
+.text-copy:nth-child(2){stroke:#8cc152;stroke-dashoffset:14%;}
+.text-copy:nth-child(3){stroke:#fcbb42;stroke-dashoffset:21%;}
+.text-copy:nth-child(4){stroke:#967adc;stroke-dashoffset:28%;}
+.text-copy:nth-child(5){stroke:#d770ad;stroke-dashoffset:35%;}
+@-webkit-keyframes stroke-offset{50%{stroke-dashoffset:35%;stroke-dasharray:0 87.5%;}}
+@keyframes stroke-offset{50%{stroke-dashoffset:35%;stroke-dasharray:0 87.5%;}}
+@-webkit-keyframes color-change{0%{background:#8cc152;}33%{background:#fcbb42;}66%{background:#967adc;}100%{background:#d770ad;}}
+@keyframes color-change{0%{background:#8cc152;}33%{background:#fcbb42;}66%{background:#967adc;}100%{background:#d770ad;}}
