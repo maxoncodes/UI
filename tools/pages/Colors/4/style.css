@@ -1,0 +1,136 @@
+.container {
+  margin-top: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 800px;
+}
+
+#gradient-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+  border-radius: 15px;
+  background: #e0e5ec;
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
+  margin: 20px 0;
+}
+
+.color-picker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #e0e5ec;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 5px 5px 10px #babecc, -5px -5px 10px #ffffff;
+  margin: 10px;
+  width: 200px;
+}
+
+.color-picker input {
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: inset 2px 2px 5px #babecc, inset -2px -2px 5px #ffffff;
+}
+
+.color-picker button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #e0e5ec;
+  box-shadow: 5px 5px 10px #babecc, -5px -5px 10px #ffffff;
+  color: #007BFF;
+  font-size: 14px;
+}
+
+.color-picker button:active {
+  box-shadow: inset 5px 5px 10px #babecc, inset -5px -5px 10px #ffffff;
+}
+
+span .thumb {
+  width: 0px;
+  /* height: 0px; */
+}
+
+#gradient-angle {
+  width: 100%;
+  margin: 10px;
+}
+
+#controls {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+}
+
+#controls button {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #e0e5ec;
+  box-shadow: 5px 5px 10px #babecc, -5px -5px 10px #ffffff;
+  color: #ff4d62;
+  font-size: 16px;
+  font-weight: 600;
+  flex-grow: 1;
+}
+
+#controls button:active {
+  box-shadow: inset 5px 5px 10px #babecc, inset -5px -5px 10px #ffffff;
+}
+
+textarea {
+      margin-top: 10px;
+  width: 100%;
+  height: 60px;
+  resize: none;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  background: #e0e5ec;
+  box-shadow: inset 5px 5px 10px #babecc, inset -5px -5px 10px #ffffff;
+}
+
+@media (max-width: 768px) {
+
+  .container {
+    margin-top: 20%;
+  }
+  #gradient-preview {
+    height: 150px;
+  }
+  #controls button {
+    margin-bottom: 5px;
+    display: flex;
+    margin: 5px;
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+  #color-list {
+    display: flex;
+    flex-direction: column;
+  }
+  textarea {
+    margin: 15px;
+    height: 145px;
+  }
+  .rn-section-gap {
+     padding: 0px;
+}
+}
